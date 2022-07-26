@@ -111,15 +111,15 @@ enum //These vars need to be one after the other (hence the enum)
 #define VAR_HEALING_YPOS 0x5039 //0x405C in JPAN's Engine
 
 /*===== TM/HM/Tutor Options (Vastly improved from other versions!) =====*/
-//#define EXPANDED_TMSHMS  //Comment this out if you want to keep 50 tms/8 hms
-//#define EXPANDED_MOVE_TUTORS //Comment this out if you want to keep 16 move tutors and the ultimate elemental moves being exclusive to Kantonian starters
-#define NUM_TMS 50	//keep this defined even if EXPANDED_TMSHMS is not!!
+#define EXPANDED_TMSHMS  //Comment this out if you want to keep 50 tms/8 hms
+#define EXPANDED_MOVE_TUTORS //Comment this out if you want to keep 16 move tutors and the ultimate elemental moves being exclusive to Kantonian starters
+#define NUM_TMS 120	//keep this defined even if EXPANDED_TMSHMS is not!!
 #define NUM_HMS 8	//keep this defined even if EXPANDED_TMSHMS is not!!
-#define NUM_MOVE_TUTORS 16 //keep this defined even if EXPANDED_MOVE_TUTORS is not!! If using DPE, set to 128.
-#define LAST_TOTAL_TUTOR_NUM 24 //Should be equal to (NUM_MOVE_TUTORS - 1) + 9. Must be set to an actual integer or the compilation will not work.
+#define NUM_MOVE_TUTORS 128 //keep this defined even if EXPANDED_MOVE_TUTORS is not!! If using DPE, set to 128.
+#define LAST_TOTAL_TUTOR_NUM 136 //Should be equal to (NUM_MOVE_TUTORS - 1) + 9. Must be set to an actual integer or the compilation will not work.
 //#define TMS_BEFORE_HMS  //Uncomment this if you want the HMs to appear after the TMs in your bag
-//#define DELETABLE_HMS //Uncomment this if you want HMs to be deletable without the Move Deleter
-//#define REUSABLE_TMS	//if defined, don't forget to give all TMs a Mystery byte of 1!
+#define DELETABLE_HMS //Uncomment this if you want HMs to be deletable without the Move Deleter
+#define REUSABLE_TMS	//if defined, don't forget to give all TMs a Mystery byte of 1!
 
 /*===== Time of Day Options =====*/
 #define TIME_MORNING_START 4		//4:00 AM / 4:00
@@ -129,15 +129,15 @@ enum //These vars need to be one after the other (hence the enum)
 
 /*===== General Number Options =====*/
 #define KANTO_DEX_COUNT 151
-#define NATIONAL_DEX_COUNT 386
+#define NATIONAL_DEX_COUNT 809
 
 #define MAX_LEVEL 100 //Also change this in the file "asm_defines.asm" found in the root
 #define NUM_TRAINER_CLASSES 107 //Vanilla FR has 107
-#define EVOS_PER_MON 5 //The number of maximum evolutions per Pokemon. Vanilla FR has 5. DPE has 16!!!
+#define EVOS_PER_MON 16 //The number of maximum evolutions per Pokemon. Vanilla FR has 5. DPE has 16!!!
 #define EV_CAP 252 //Also change this in the file "asm_defines.s" found in the root
 #define POWER_ITEM_EV_YIELD 8 //Set to 4 for older mechanic
 
-#define DUSK_BALL_MULTIPLIER 30 //Change this line to 35 to make the catch rate for the Dusk Ball 3.5x like before Gen 7
+#define DUSK_BALL_MULTIPLIER 35 //Change this line to 35 to make the catch rate for the Dusk Ball 3.5x like before Gen 7
 #define STANDARD_IV 10 //Change this to be the number of IVs Pokemon owned by random trainers should have (all stats will have this number)
 #define SWARM_CHANCE 50 //Change this to the percentage that swarming Pokemon will appear if they can be found on the current route.
 #define WILD_DOUBLE_RANDOM_CHANCE 50 //Change this to the percentage that a wild double battle will be initiated if the player is in special grass.
@@ -168,9 +168,9 @@ enum //These vars need to be one after the other (hence the enum)
 #define BADGE_7_OBEDIENCE_LEVEL 70
 
 /*===== OW Palette Options =====*/
-#define TREE_DISGUISE_PAL_ID 0x1105 //The NPC palette id of the tree disguise movement permission.
-#define ROCK_DISGUISE_PAL_ID 0x1104 //The NPC palette id of the mountain disguise movement permission.
-#define WEIRD_DISGUISE_PAL_ID 0x1103 //The NPC palette id of the weird disguise movement permission.
+#define TREE_DISGUISE_PAL_ID 0x1180 //The NPC palette id of the tree disguise movement permission.
+#define ROCK_DISGUISE_PAL_ID 0x1181 //The NPC palette id of the mountain disguise movement permission.
+#define WEIRD_DISGUISE_PAL_ID 0x1182 //The NPC palette id of the weird disguise movement permission.
 
 /*===== Pre-Battle Mugshot Options ====*/
 #define FR_PRE_BATTLE_MUGSHOT_STYLE //The FR Elite Four and Champion use their GF defined mugshots
@@ -221,7 +221,7 @@ enum //These vars need to be one after the other (hence the enum)
 //#define SET_HEALING_PLACE_HACK  //Uncomment this if you want custom map/bank whiteout respawn locations
 //#define FOSSIL_IMAGE_HACK   //Uncommenting includes JPANs fossil image hack (see EXISTING_FOSSIL_IMAGE_TABLE_ADDRESS)
 #define EVO_HOLD_ITEM_REMOVAL //Comment this out if you want leveling up/hold item evolution (eg. sneasel) to remove the item (like normal)
-#define EXPAND_MOVESETS //Comment this out if you're using the Dynamic Pokemon Expansion repo to expand the movesets
+//#define EXPAND_MOVESETS //Comment this out if you're using the Dynamic Pokemon Expansion repo to expand the movesets
 //#define FATHER_PASSES_TMS //Uncomment this out if you want TMs the father knows to be passed through breeding
 //#define INHERIT_MASTER_CHERISH_BALL  //Uncomment this if you want Master and Cherish balls to be inherited by daycare offspring
 //#define GIVEPOKEMON_CUSTOM_HACK //Alows custom Pokemon to be given by setting the second last byte of the givepokemon scripting command
@@ -291,16 +291,16 @@ enum //These vars need to be one after the other (hence the enum)
 
 /*===== Exp Gain Options =====*/
 //#define OLD_EXP_SHARE //Uncomment this line to make the Exp. Share work like it did before Gen 6
-//#define TRAINER_EXP_BOOST // Uncomment this line to give the Exp boost for battling a Trainer's Pokemon (Pre Gen 7)
+#define TRAINER_EXP_BOOST // Uncomment this line to give the Exp boost for battling a Trainer's Pokemon (Pre Gen 7)
 //#define OLD_EXP_SPLIT //Uncomment this line to split the Exp amongst all participating pokemon (Pre Gen 6)
-//#define FLAT_EXP_FORMULA //Uncomment this line to use a Flat Exp calculation formula (Gens 2 - 4, 6)
+#define FLAT_EXP_FORMULA //Uncomment this line to use a Flat Exp calculation formula (Gens 2 - 4, 6)
 #define GEN_7_BASE_EXP_YIELD //Base Exp Yield is read from gBaseExpBySpecies to use larger values that match Gen 7
 #define CAPTURE_EXPERIENCE //Experience is awared upon capturing Pokemon.
 #define EXP_AFFECTION_BOOST //Pokemon with friendship >= 220 gain boosted experience
 
 /*===== Other Battle Options =====*/
 //#define NO_GHOST_BATTLES //Uncomment this line to disable the Ghost battle feature from Pokemon Tower in Lavender town
-//#define GEN4_PLUS_SELECTION_SCREEN //Uncommenting this line does not give you the Gen 4+ selection screen, it only adds features that supports it
+#define GEN4_PLUS_SELECTION_SCREEN //Uncommenting this line does not give you the Gen 4+ selection screen, it only adds features that supports it
 //#define OBEDIENCE_CHECK_FOR_PLAYER_ORIGINAL_POKEMON //Uncommenting line line will open up the possibility that the Player's Pokemon can disobey them (not just traded mons)
 //#define WILD_ALWAYS_SMART //Uncomment this line if you want all Wild Pokemon to act smartly
 //#define HAIL_IN_BATTLE //Uncommenting this line enables the Hail weather effect in battle when the OW weather is set to WEATHER_STEADY_SNOW (0x7)

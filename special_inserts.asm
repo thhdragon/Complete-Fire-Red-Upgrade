@@ -742,22 +742,6 @@ SummaryScreenExpDisplay2:
 .org 0x352F16, 0xFF
 	.byte 0x1C
 	
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@ Multichoice Pointers
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-.org 0x3E05B0, 0xFF
-.word MULTICHOICE_STRING_LOADER
-.word 0x2
-.word MULTICHOICE_STRING_LOADER
-.word 0x3
-.word MULTICHOICE_STRING_LOADER
-.word 0x4
-.word MULTICHOICE_STRING_LOADER
-.word 0x5
-.word MULTICHOICE_STRING_LOADER
-.word 0x6
-.word MULTICHOICE_STRING_LOADER
-.word 0x7
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @ Dynamic Overworld Palettes

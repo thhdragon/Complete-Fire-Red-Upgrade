@@ -1,4 +1,4 @@
-MAX_LENGTH=16
+MAX_LENGTH=12
 FILL_FF=True
 
 #org @gAbilityNames
@@ -45,7 +45,7 @@ Oblivious
 Cloud Nine
 
 #org @NAME_COMPOUND_EYES
-Compound Eyes
+CompoundEyes
 
 #org @NAME_INSOMNIA
 Insomnia
@@ -96,7 +96,7 @@ Clear Body
 Natural Cure
 
 #org @NAME_LIGHTNING_ROD
-Lightning Rod
+LightningRod
 
 #org @NAME_SERENE_GRACE
 Serene Grace
@@ -231,7 +231,7 @@ Neutralize Gas
 Shell Armor
 
 #org @NAME_HUNGER_SWITCH
-Hunger Switch
+HungerSwitch
 
 #org @NAME_AIR_LOCK
 Air Lock
@@ -384,7 +384,7 @@ Analytic
 No Guard
 
 #org @NAME_MEGA_LAUNCHER
-Mega Launcher
+MegaLauncher
 
 #org @NAME_TOUGH_CLAWS
 Tough Claws
@@ -456,7 +456,7 @@ Wonder Skin
 Protean
 
 #org @NAME_PARENTAL_BOND
-Parental Bond
+ParentalBond
 
 #org @NAME_MOLD_BREAKER
 Mold Breaker
@@ -483,13 +483,13 @@ Corrosion
 Disguise
 
 #org @NAME_EMERGENCY_EXIT
-Emergency Exit
+Emerg Exit
 
 #org @NAME_FLUFFY
 Fluffy
 
 #org @NAME_STEELY_SPIRIT
-Steely Spirit
+SteelySpirit
 
 #org @NAME_PERISH_BODY
 Perish Body
@@ -498,7 +498,7 @@ Perish Body
 Wandering Soul
 
 #org @NAME_POWER_CONSTRUCT
-Power Construct
+PwrConstruct
 
 #org @NAME_PRISM_ARMOR
 Prism Armor
@@ -510,7 +510,7 @@ RKS System
 Schooling
 
 #org @NAME_SHADOW_SHIELD
-Shadow Shield
+ShadowShield
 
 #org @NAME_SHIELDS_DOWN
 Shields Down
@@ -528,7 +528,7 @@ Stamina
 Steelworker
 
 #org @NAME_TANGLING_HAIR
-Tangling Hair
+TanglingHair
 
 #org @NAME_TRIAGE
 Triage
@@ -537,7 +537,7 @@ Triage
 Water Bubble
 
 #org @NAME_WATER_COMPACTION
-Water Compact
+WaterCompact
 
 #org @NAME_STALL
 Stall
@@ -546,7 +546,7 @@ Stall
 Multitype
 
 #org @NAME_ELECTRIC_SURGE
-Electric Surge
+ElectricSrge
 
 #org @NAME_GRASSY_SURGE
 Grassy Surge
@@ -555,7 +555,7 @@ Grassy Surge
 Misty Surge
 
 #org @NAME_PSYCHIC_SURGE
-Psychic Surge
+PsychicSurge
 
 #org @NAME_SURGE_SURFER
 Surge Surfer
@@ -636,19 +636,19 @@ Poison Touch
 Magician
 
 #org @NAME_STANCE_CHANGE
-Stance Change
+StanceChange
 
 #org @NAME_PRIMORDIAL_SEA
-Primordial Sea
+Prime Sea
 
 #org @NAME_DESOLATE_LAND
-Desolate Land
+DesolateLand
 
 #org @NAME_DELTA_STREAM
 Delta Stream
 
 #org @NAME_GORILLA_TACTICS
-Gorilla Tactics
+Gorilla Tact
 
 #org @NAME_BERSERK
 Berserk
@@ -660,7 +660,7 @@ Long Reach
 Liquid Voice
 
 #org @NAME_QUEENLY_MAJESTY
-Queenly Majesty
+Qnly Majesty
 
 #org @NAME_INNARDS_OUT
 Innards Out
@@ -708,7 +708,7 @@ Battery
 Receiver
 
 #org @NAME_POWER_OF_ALCHEMY
-Alchemic Power
+Alch Power
 
 #org @NAME_NEUROFORCE
 Neuroforce
@@ -717,10 +717,10 @@ Neuroforce
 Galvanize
 
 #org @NAME_INTREPID_SWORD
-Intrepid Sword
+IntrepidSwrd
 
 #org @NAME_DAUNTLESS_SHIELD
-Valiant Shield
+Valiant Shld
 
 #org @NAME_BALL_FETCH
 Ball Fetch
@@ -762,7 +762,7 @@ Power Spot
 Mimicry
 
 #org @NAME_SCREEN_CLEANER
-Screen Cleaner
+Scrn Cleaner
 
 #org @NAME_PASTEL_VEIL
 Pastel Veil
